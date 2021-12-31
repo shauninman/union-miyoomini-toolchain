@@ -4,7 +4,7 @@ Based on the [Trimui toolchain Docker image](https://git.crowdedwood.com/trimui-
 
 ## Installation
 
-With Docker installed and running, `make shell` builds the toolchain and drops into a shell inside the container. The container's `~/workspace` is bound to `./workspace` by default. The toolchain is located at `/opt/` inside the container.
+With Docker installed and running, `make shell` builds the toolchain and drops into a shell inside the container. The container's `~/workspace` is bound to `./workspace` by default. The `CROSS_COMPILE` and `PATH` env vars have been updated with the toolchain location.
 
 After building the first time, unless a dependency of the image has changed, `make shell` will skip building and drop into the shell.
 
