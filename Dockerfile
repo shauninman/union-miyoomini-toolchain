@@ -8,6 +8,7 @@ RUN dpkg --add-architecture armhf && \
   apt-get -y update  \
   && apt-get -y install \
     build-essential \
+	scons \
 	crossbuild-essential-armhf \
 	libsdl1.2-dev:armhf \
 	libsdl-image1.2-dev:armhf \
