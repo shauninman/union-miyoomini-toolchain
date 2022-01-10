@@ -20,6 +20,9 @@ RUN dpkg --add-architecture armhf && \
 RUN mkdir -p /root/workspace
 WORKDIR /root
 
+COPY my283/include /usr/include/
+COPY my283/lib /usr/lib/
+
 COPY setup-env.sh .
 RUN cat setup-env.sh >> .bashrc
 
