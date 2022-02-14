@@ -8,6 +8,7 @@ RUN dpkg --add-architecture armhf && \
   apt-get -y update  \
   && apt-get -y install \
     build-essential \
+	cmake \
 	scons \
 	crossbuild-essential-armhf \
 	libsdl1.2-dev:armhf \
@@ -15,6 +16,7 @@ RUN dpkg --add-architecture armhf && \
 	libsdl-mixer1.2-dev:armhf \
 	libsdl-ttf2.0-dev:armhf \
 	libpng-dev:armhf \
+	libfreetype6-dev:armhf \
   && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /root/workspace
