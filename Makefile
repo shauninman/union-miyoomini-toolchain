@@ -10,7 +10,7 @@ WORKSPACE_DIR := $(shell pwd)/workspace
 	touch .build
 
 shell: .build
-	docker run -it --rm -v $(WORKSPACE_DIR):/root/workspace $(TOOLCHAIN_NAME) /bin/bash
+	docker run -it --rm -v "$(WORKSPACE_DIR)":/root/workspace $(TOOLCHAIN_NAME) /bin/bash
 
 clean:
 	docker rmi $(TOOLCHAIN_NAME)
