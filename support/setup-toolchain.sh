@@ -9,9 +9,9 @@ if [ -f "./$TOOLCHAIN_TAR" ]; then
 	cp "./$TOOLCHAIN_TAR" /opt
 	cd /opt
 else
-	echo "getting remote toolchain"
 	cd /opt
 	wget "$TOOLCHAIN_URL"
+	echo "using remote toolchain $TOOLCHAIN_VERSION"
 fi
 tar xf "./$TOOLCHAIN_TAR"
 rm -rf "./$TOOLCHAIN_TAR"
