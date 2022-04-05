@@ -1,6 +1,6 @@
 # Toolchain Docker image
 
-Based on the [Trimui toolchain Docker image](https://git.crowdedwood.com/trimui-toolchain/) by neonloop. The toolchain blob was created with this [Miyoo Mini Toolchain Buildroot](https://github.com/shauninman/miyoomini-toolchain-buildroot/) and includes the [GNU Toolchain for the A-profile Architecture 8.3-2019.03](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads/8-3-2019-03).
+Based on the [Trimui toolchain Docker image](https://git.crowdedwood.com/trimui-toolchain/) by neonloop. The toolchain blobs were created with this [Miyoo Mini Toolchain Buildroot](https://github.com/shauninman/miyoomini-toolchain-buildroot/) or the [aarch64 version]((https://github.com/shauninman/miyoomini-toolchain-buildroot-aarch64/)) and include the [GNU Toolchain for the A-profile Architecture 8.3-2019.03](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads/8-3-2019-03) or the custom built [aarch64 version]((https://github.com/shauninman/miyoomini-toolchain-buildroot/)).
 
 ## Installation
 
