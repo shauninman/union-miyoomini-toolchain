@@ -1,14 +1,12 @@
 #! /bin/sh
 
-TOOLCHAIN_TAR="miyoomini-toolchain.tar.xz"
 TOOLCHAIN_VERSION=v0.0.2
+TOOLCHAIN_TAR="miyoomini-toolchain.tar.xz"
 
 TOOLCHAIN_ARCH=`uname -m`
 if [ "$TOOLCHAIN_ARCH" = "aarch64" ]; then
-	echo "good"
 	TOOLCHAIN_REPO=miyoomini-toolchain-buildroot-aarch64
 else
-	echo "oh no"
 	TOOLCHAIN_REPO=miyoomini-toolchain-buildroot
 fi
 
