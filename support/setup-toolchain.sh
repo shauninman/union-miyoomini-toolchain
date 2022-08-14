@@ -1,6 +1,6 @@
 #! /bin/sh
 
-TOOLCHAIN_VERSION=v0.0.2
+TOOLCHAIN_VERSION=v0.0.3
 TOOLCHAIN_TAR="miyoomini-toolchain.tar.xz"
 
 TOOLCHAIN_ARCH=`uname -m`
