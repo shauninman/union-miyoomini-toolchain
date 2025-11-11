@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM debian/eol:buster-slim
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV TZ=America/New_York
